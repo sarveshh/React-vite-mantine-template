@@ -16,13 +16,9 @@ const defaultSlice = createSlice({
     decrement: (state) => {
       state.count -= 1;
     },
-    toggleMode: (state) => {
-      state.mode = state.mode === "light" ? "dark" : "light";
-    },
   },
 });
 
-export const { increment, decrement, toggleMode } = defaultSlice.actions;
+export const { increment, decrement } = defaultSlice.actions;
 export const selectCounter = (state: AppState) => state.default.count;
-export const selectMode = (state: AppState) => state.default.mode;
 export default defaultSlice.reducer;
