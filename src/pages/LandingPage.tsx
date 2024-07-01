@@ -1,5 +1,4 @@
 import { useDispatch, useSelector } from "react-redux";
-import Navbar from "../components/Navbar";
 import { decrement, increment, selectCounter } from "../store/slice";
 
 const LandingPage = () => {
@@ -15,36 +14,40 @@ const LandingPage = () => {
   };
 
   return (
-    <div className="bg-white">
-      <Navbar />
-      <div className="flex justify-center items-center h-screen  flex-col">
-        <h1 className="text-2xl text-black font-bold">
-          Welcome to the landing page
-        </h1>
-        <p className="m-4 text-black">
-          This is a React starter template with out of the box features and
-          configurations for:
-        </p>
-        <ul className="list-disc list-inside text-black mb-4">
-          <li>React + Vite + Typescript + Eslint + Prettier</li>
-          <li>Dark mode</li>
-          <li>Redux toolkit</li>
-          <li>Redux persist</li>
-          <li>React Router</li>
-          <li>Error Boundary</li>
-        </ul>
+    <div style={{ backgroundColor: "white" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+          flexDirection: "column",
+        }}
+      >
         This is a persisted counter
-        <div className="flex items-center mt-4">
+        <div
+          style={{ display: "flex", alignItems: "center", marginTop: "1rem" }}
+        >
           <button
             onClick={handleDecrement}
-            className="bg-red-500 text-white px-4 py-2 rounded-lg"
+            style={{
+              backgroundColor: "red",
+              color: "white",
+              padding: "0.5rem 1rem",
+              borderRadius: "0.5rem",
+            }}
           >
             -
           </button>
-          <p className="mx-4 text-black">{counter}</p>
+          <p style={{ margin: "0 2rem", color: "black" }}>{counter}</p>
           <button
             onClick={handleIncrement}
-            className="bg-green-500 text-white px-4 py-2 rounded-lg"
+            style={{
+              backgroundColor: "green",
+              color: "white",
+              padding: "0.5rem 1rem",
+              borderRadius: "0.5rem",
+            }}
           >
             +
           </button>

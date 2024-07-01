@@ -14,8 +14,15 @@
     "preview": "npm run build & vite preview"
   },
   "dependencies": {
+    "@mantine/core": "^7.11.0",
+    "@mantine/dates": "^7.11.0",
+    "@mantine/form": "^7.11.0",
+    "@mantine/hooks": "^7.11.0",
+    "@mantine/modals": "^7.11.0",
+    "@mantine/notifications": "^7.11.0",
+    "@mantine/nprogress": "^7.11.0",
     "@reduxjs/toolkit": "^2.2.1",
-    "dayjs": "^1.11.10",
+    "dayjs": "^1.11.11",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsx-a11y": "^6.8.0",
